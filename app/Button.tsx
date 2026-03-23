@@ -3,6 +3,7 @@ import { Pressable, StyleSheet} from 'react-native';
 type Props = {
     onPress: () => void;
     color: string;
+    id: number;
 }
 
 const styles = StyleSheet.create({
@@ -12,8 +13,8 @@ const styles = StyleSheet.create({
 })
 
 
-export default function Button({onPress, color}: Props){
+export default function Button({onPress, color, id}: Props){
     return (
-        <Pressable onPress={onPress} />
+        <Pressable onPress={onPress} style={color} id={id}/>
     )
 }
