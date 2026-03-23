@@ -14,8 +14,6 @@ const styles = StyleSheet.create({
 
 export default function Button({onPress, color}: Props){
     return (
-        <Pressable onPress={onPress}>
-
-        </Pressable>
-    );
+        <Pressable onPress={onPress} />
+    )
 }
