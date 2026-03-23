@@ -1,5 +1,10 @@
 import { Pressable, StyleSheet} from 'react-native';
 
+type Props = {
+    onPress: () => void;
+    color: string;
+}
+
 const styles = StyleSheet.create({
     Button: {
         borderWidth: 2
@@ -7,8 +12,10 @@ const styles = StyleSheet.create({
 })
 
 
-export default function Button(){
+export default function Button({onPress, color}: Props){
     return (
-        
+        <Pressable onPress={onPress}>
+
+        </Pressable>
     );
 }
